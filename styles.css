@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FAF0CA;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    animation: crash 1s ease-out forwards;
+}
+
+/* Header Styles */
+h1 {
+    color: #357266;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    animation: crash 1s ease-out forwards;
+}
+
+
+/* Center the unordered list */
+ul {
+    list-style-position: inside; /* Ensures bullets stay inside the container */
+    padding: 0; /* Remove default padding */
+    margin: 0 auto; /* Center the list horizontally */
+    display: inline-block; /* Make the list behave like an inline element */
+    text-align: left; /* Align text within the list items */
+}
+
+/* Style the list items */
+li {
+    text-align: center; /* Center the text inside each list item */
+    margin: 5px 0; /* Add some spacing between items */
+}
+
+/* Paragraph Styles */
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px auto;
+    max-width: 600px;
+    animation: crash 1s ease-out forwards;
+}
+
+/* Link Styles */
+a {
+    color: #007acc;
+    text-align: center;
+    text-decoration: none;
+    animation: crash 1s ease-out forwards;
+}
+
+a:hover {
+    text-align: center;
+    text-decoration: underline;
+    animation: crash 1s ease-out forwards;
+}
+
+/* Add some spacing */
+body {
+    text-align: center;
+    padding: 20px;
+    animation: crash 1s ease-out forwards;
+}
+
+@keyframes crash {
+    0% {
+        transform: translateY(-100vh); /* Start above the viewport */
+    }
+    80% {
+        transform: translateY(0); /* Land at the top of the page */
+    }
+    100% {
+        transform: translateY(10px); /* Slight bounce effect */
+    }
+}
+
+/* Language Toggle Button */
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.top-right:hover {
+    background-color: #005f99;
+}
